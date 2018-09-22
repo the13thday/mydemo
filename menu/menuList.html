@@ -61,6 +61,12 @@
                elem.style.height = size + 'px';
             })
         }
+
+        var p = new Promise((resolve, reject) => {
+            setTimeout(() => resolve("game over"), 3000);
+        })
+
+        p.then(data => console.log(data), err => console.log(err))
         
         
         
